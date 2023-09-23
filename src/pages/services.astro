@@ -1,0 +1,29 @@
+---
+const nameNew = "pagina de Coffee"
+const lista = ["aura","ferney","amy","sheila","ariana"]
+---
+<style>
+    body{
+        background: url("https://amorcafesignature.mx/wp-content/uploads/2020/01/encabezado-de-nuestro-amor-por-el-cafe.jpg");
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        font-size: 30px;
+    }
+
+</style>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+    <body>
+<h1>{nameNew}</h1>
+<ul>
+    {lista.map(name => <li>{name}</li><button>💗</button>)}
+</ul>
+</body>
+
