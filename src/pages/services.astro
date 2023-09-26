@@ -1,29 +1,34 @@
 ---
-const nameNew = "pagina de Coffee"
-const lista = ["aura","ferney","amy","sheila","ariana"]
+import Layout from "../components/layout.astro"
+import Card from "../components/card.astro"
 ---
+<Layout pageTitle="este es el service">
+    
 <style>
-    body{
-        background: url("https://amorcafesignature.mx/wp-content/uploads/2020/01/encabezado-de-nuestro-amor-por-el-cafe.jpg");
-        text-align: center;
-        align-items: center;
-        align-content: center;
-        font-size: 30px;
-    }
-
+    .lol{
+    display: flex;
+    flex-direction: row;
+}
 </style>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-    <body>
-<h1>{nameNew}</h1>
-<ul>
-    {lista.map(name => <li>{name}</li><button>💗</button>)}
-</ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="ol">nuestros servicios</h1>
+<div class="lol">
+    <Card title = "caballero magico capitulo 1" paragraph = "era un dia llovioso que se sentia mucha pena y dolor sobre el mundo lleno de armas y guerras la cuales ya habian tomado diferentes vidas de gentes inosentes que no tenia nada que ver con esa guerra" />
+    <Card title = "caballero magico capitulo 2" paragraph ="la gente corria de los militares enemigo de alemania, los cuales fueron los que iniciaron la guerra mundial que esta ocurriendo y afectado a todos los paise de eurropa y africa y asia que realizaron trabajos frozados"/>
+    <Card title = "caballero magico capitulo 3" paragraph ="en esa pequeña guerra ocurriero difentes catastrofes tales como eruciones volcanicas y tambien sunamis artificiales creados por alemina dando creacion a nuevas armas      en 1990 se creo diferentes defenzas"/>
+    <Card title = "caballero magico capitulo 4" paragraph ="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ut architecto ipsam fuga ex eos, sit illum vitae animi temporibus neque quos quaerat totam dolor quibusdam est optio at nemo! erro  404"/>
+    <Card title = "caballero magico capitulo 5" paragraph ="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ut architecto ipsam fuga ex eos, sit illum vitae animi temporibus neque quos quaerat totam dolor quibusdam est optio at nemo!erro  404"/>
+    <Card title = "caballero magico capitulo 6" paragraph ="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ut architecto ipsam fuga ex eos, sit illum vitae animi temporibus neque quos quaerat totam dolor quibusdam est optio at nemo!erro  404"/>
+</div>
+
 </body>
+</html>
+</Layout>
 
